@@ -46,3 +46,17 @@ app.*.map.json
 
 # Widget Preview related
 .widget_preview/
+
+
+# ──── Tambahan kelompok AWALI ────
+# File konfigurasi rahasia
+.env
+.env.*
+
+# File signing Android & Keystore
+*.jks
+*.keystore
+android/key.properties
+
+# Hasil pengujian coverage
+coverage/
