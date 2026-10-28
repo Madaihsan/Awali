@@ -1,5 +1,6 @@
 # Kebijakan Privasi — AWALI (Absensi WAjah dan LokasI)
 **Versi M01 · Oktober 2026** *(Fase Penyimpanan Lokal — Belum Ada Transmisi Cloud)*  
+**Penanggung jawab:** 2300016104_Andang Purwanto
 
 ---
 
