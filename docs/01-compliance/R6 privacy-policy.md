@@ -73,6 +73,5 @@ Apabila pada milestone selanjutnya (M05) aplikasi menambahkan fitur sinkronisasi
 
 Apabila terdapat pertanyaan, masukan, atau keberatan mengenai pengelolaan data pribadi dalam aplikasi AWALI, tim pengembang dapat dihubungi melalui:
 
-- **Email Tim Pengembang:** `kelompok2-pemmob@uad.ac.id`
 - **Unit Pengelola:** Tim Kepegawaian & Pengembang AWALI, Universitas Ahmad Dahlan
 - **Kanal Pengaduan Formal:** Bagian Kepegawaian UAD (untuk penanganan keberatan yang berkaitan dengan hak-hak data pribadi sesuai UU PDP)
