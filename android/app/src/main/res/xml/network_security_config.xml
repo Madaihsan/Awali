@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- Larang semua koneksi HTTP tanpa TLS/SSL di production -->
+    <base-config cleartextTrafficPermitted="false" />
+</network-security-config>
