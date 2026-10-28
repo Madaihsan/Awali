@@ -1,6 +1,7 @@
 # R5 · Audit Dark Pattern
 **Aplikasi:** AWALI (Absensi WAjah dan LokasI)  
 **Tujuan:** Memastikan antarmuka pengguna tidak memanipulasi, menjebak, atau mempersulit pegawai dalam mengambil keputusan terkait privasi dan kendali data pribadinya.  
+**Penanggung jawab:** 2300016104_Andang Purwanto 
 
 ---
 
