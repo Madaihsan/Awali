@@ -1,0 +1,89 @@
+SEC-06 · BUKTI IZIN APLIKASI (Permission Verification)
+Aplikasi  : AWALI (Absensi WAjah dan LokasI)
+Kelompok  : Kelompok 2 · Pemrograman Mobile SI UAD
+Tanggal   : 2026-10-29
+Fase      : M01 — Penyimpanan Lokal (Offline-First)
+Diverifikasi oleh: Tim Pengembang AWALI
+
+================================================================================
+METODE VERIFIKASI: AndroidManifest.xml (app module)
+File      : android/app/src/main/AndroidManifest.xml
+Perintah  : grep -n "uses-permission" android/app/src/main/AndroidManifest.xml
+================================================================================
+
+HASIL:
+(tidak ada output — tidak ada deklarasi <uses-permission> dalam manifest)
+
+================================================================================
+INTERPRETASI HASIL
+================================================================================
+
+Tidak ditemukan deklarasi <uses-permission> apa pun dalam file
+AndroidManifest.xml aplikasi AWALI pada fase M01.
+
+Ini berarti:
+  [LULUS] android.permission.INTERNET        — TIDAK ADA (sesuai SEC-06)
+  [LULUS] android.permission.ACCESS_FINE_LOCATION — TIDAK ADA (akan ditambahkan di M04)
+  [LULUS] android.permission.CAMERA         — TIDAK ADA (akan ditambahkan di M04)
+  [LULUS] android.permission.READ_CONTACTS  — TIDAK ADA
+  [LULUS] android.permission.READ_EXTERNAL_STORAGE — TIDAK ADA
+
+Konfigurasi keamanan tambahan yang TELAH diterapkan:
+  [LULUS] android:allowBackup="false"
+          → Mencegah data aplikasi masuk ke proses ADB backup atau
+            cloud backup otomatis perangkat (menutup vektor eksfiltrasi data).
+
+  [LULUS] android:networkSecurityConfig="@xml/network_security_config"
+          → Merujuk ke file res/xml/network_security_config.xml yang mengatur
+            kebijakan cleartext HTTP (lihat bukti SEC-05 terpisah).
+
+================================================================================
+KONTEN network_security_config.xml (SEC-05)
+File: android/app/src/main/res/xml/network_security_config.xml
+================================================================================
+
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+  <!-- Larang semua HTTP di production -->
+  <base-config cleartextTrafficPermitted="false" />
+</network-security-config>
+
+Interpretasi:
+  [LULUS] cleartextTrafficPermitted="false"
+          → Seluruh komunikasi jaringan dari aplikasi AWALI HARUS menggunakan
+            HTTPS (TLS). Koneksi HTTP polos akan diblokir secara otomatis
+            oleh sistem Android. Kebijakan ini berlaku sebagai baseline keamanan
+            jaringan sejak M01, sebelum fitur komunikasi remote diaktifkan di M05.
+
+================================================================================
+KESIMPULAN KEPATUHAN SEC-06
+================================================================================
+
+Requirement SEC-06 ("Prinsip Izin Minimal / Least Privilege: tidak menambahkan
+izin jaringan INTERNET pada AndroidManifest sampai sistem cloud benar-benar
+diintegrasikan di M05") dinyatakan:
+
+  STATUS: LULUS [PASS]
+
+Tidak ada izin sensitif yang dideklarasikan pada fase M01. Seluruh izin yang
+dibutuhkan (CAMERA, GPS, INTERNET) akan ditambahkan secara bertahap sesuai
+dengan kebutuhan milestone dan didokumentasikan dalam register kepatuhan yang
+diperbarui.
+
+================================================================================
+CATATAN UNTUK VERIFIKASI LANJUTAN (Post M04/M05)
+================================================================================
+
+Untuk verifikasi menggunakan APK hasil build release, jalankan perintah berikut
+menggunakan Android SDK Build Tools:
+
+  aapt dump permissions build/app/outputs/flutter-apk/app-release.apk
+
+Simpan output ke: docs/01-compliance/evidence/sec-06-aapt-permissions.txt
+
+Pastikan output TIDAK mengandung:
+  - android.permission.INTERNET (kecuali mulai M05)
+  - android.permission.READ_EXTERNAL_STORAGE
+  - android.permission.ACCESS_BACKGROUND_LOCATION
+
+================================================================================
