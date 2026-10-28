@@ -2,6 +2,7 @@
 **Topik:** Presensi Pegawai Berbasis Lokasi & Face Recognition  
 **Kelompok:** Kelompok 2 · Pemrograman Mobile SI UAD (2026/2027 Gasal)  
 **Anggota:** Mada Ihsan Wicaksono, Faishal Abyan, M Yusuf Ardabili, Andang Purwanto, Az zikra Farraz Arsyahputra  
+**Penanggung Jawab:** M. Yusuf Ardabili  
 
 ---
 
