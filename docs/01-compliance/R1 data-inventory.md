@@ -2,8 +2,7 @@
 **Aplikasi:** AWALI (Absensi WAjah dan LokasI)  
 **Topik:** Presensi Pegawai  
 **Kelompok:** Kelompok 2 · Pemrograman Mobile SI UAD  
-**Penanggung jawab:**Az Zikra Farras Arsyaputra
-**NIM:**2300016091
+**Penanggung jawab:** Az Zikra Farras Arsyaputra - 2300016091
 
 ---
 
