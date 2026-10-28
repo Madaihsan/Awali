@@ -1,7 +1,9 @@
 # R3 · Peta Hak Subjek Data UU PDP $\rightarrow$ Fitur Aplikasi AWALI
 **Aplikasi:** AWALI (Absensi WAjah dan LokasI)  
 **Landasan Hukum:** UU No. 27 Tahun 2022 tentang Pelindungan Data Pribadi (Bab IV: Hak Subjek Data Pribadi)  
-
+**Aplikasi:** AWALI (Absensi WAjah dan LokasI)
+**Penanggung jawab:**Az Zikra Farras Arsyaputra
+**NIM:**2300016091
 ---
 
 ## 1. Pemetaan Hak Subjek Data ke Fitur Aplikasi
