@@ -6,7 +6,7 @@ Universitas Ahmad Dahlan — Tahun Akademik 2026/2027 Gasal
 ---
 
 ## 👥 Tim Pengembang (Kelompok)
-- **Mada Ihsan Wicaksono** — 2300016158 *(Repository & Security Lead)*
+- **Mada Ihsan Wicaksono** — 2300016158 
 - **Faishal Abyan** — 2338016159
 - **M Yusuf Ardabili** — 2300016156
 - **Andang Purwanto** — 2300016104
