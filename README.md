@@ -113,8 +113,8 @@ Proyek ini dikerjakan secara bertahap sepanjang semester mengacu pada peta miles
 
 | Milestone | Tahapan | Deskripsi Utama | Status | Tag Git |
 |:---:|---|---|:---:|:---:|
-| **M01** | **Inisiasi Proyek** | Charter, Register Kepatuhan R1–R6, Baseline Keamanan & Fondasi Repository | 🟡 *Dalam Proses* | `m01-start` → `m01-initiation` |
-| **M02** | **Spesifikasi** | Elisitasi Kebutuhan, User Stories, Acceptance Criteria, SRS Ringkas & Diagram UML | ⚪ *Belum Mulai* | `m02-spec` |
+| **M01** | **Inisiasi Proyek** | Charter, Register Kepatuhan R1–R6, Baseline Keamanan & Fondasi Repository | 🟢 **Selesai** | `m01-initiation` |
+| **M02** | **Spesifikasi** | Elisitasi Kebutuhan, User Stories, Acceptance Criteria, SRS Ringkas & Diagram UML | 🟢 **Selesai** | `m02-spec` |
 | **M03** | **Prototipe UI** | Screen Inventory, Hi-Fi Prototype Figma, Design Tokens & Usability Testing | ⚪ *Belum Mulai* | `m03-design` |
 | **M04** | **Frontend Mobile**| Implementasi Widget Flutter, Navigasi, Provider State, Validasi & Data Terenkripsi | ⚪ *Belum Mulai* | `m04-frontend` |
 | **M05** | **Integrasi API** | Integrasi Cloud/Firestore, Sakelar USE_REMOTE, Security Rules & Kebijakan Privasi v2 | ⚪ *Belum Mulai* | `m05-integration` |
