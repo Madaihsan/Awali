@@ -147,3 +147,4 @@ sequenceDiagram
 | **Proteksi Kriptografi Kuat** | `SEC-02` | Skenario 2A menunjukkan pemanggilan KDF PBKDF2 (120.000 iterasi) dan perbandingan waktu-konstan (*constant time*) untuk mencegah *brute-force* dan *timing attack*. |
 | **Pemusnahan Ganda Menyeluruh** | `PRV-03` | Skenario 2B membuktikan bahwa perintah hapus mengeksekusi **keduanya**: basis data catatan presensi (`AR.clear()`) **dan** penyimpanan perangkat keras Keystore (`SEC.clearAll()`). |
 | **Kemudahan Hak Penghapusan (≤ 2 Ketukan)** | `PRV-03` | Skenario 2B membuktikan alur pemusnahan tuntas hanya dalam 2 ketukan (Ketukan 1: Tombol menu, Ketukan 2: Dialog konfirmasi), tanpa berbelit-belit (*bebas dark pattern Roach Motel*). |
+

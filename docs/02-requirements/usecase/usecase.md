@@ -117,3 +117,4 @@ Pemilihan relasi antar use case didasarkan pada aturan rekayasa perangkat lunak 
 4. **`UC-07 (Ajukan Koreksi) ──<<extend>>──> UC-02 (Rekam Presensi)`**
    * **Jenis Relasi:** `<<extend>>` (Kondisional).
    * **Alasan:** Pengajuan koreksi merupakan jalur pengecualian yang hanya diakses pengguna apabila proses rekam presensi reguler mengalami kendala teknis eksternal.
+

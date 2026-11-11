@@ -88,3 +88,4 @@ sequenceDiagram
 | **7–9** | `CS.captureAndDetectFace()` | Mengaktifkan kamera depan. Deteksi wajah diproses lokal di perangkat (*on-device ML*). Segera setelah vektor numerik diperoleh, data citra mentah dimusnahkan dari RAM (`PRV-01`). |
 | **10–12** | `AP.recordAttendance()` $\rightarrow$ `AR.add()` | UI tidak pernah langsung mengakses media penyimpanan. Layar mendelegasikan transaksi ke `AttendanceProvider`, dan Provider memanggil interface `AttendanceRepository`. |
 | **13–15** | `AP.notifyListeners()` $\rightarrow$ `SnackBar` | Provider memicu *rebuild* widget `Consumer` yang sedang mendengarkan perubahan data, dan sistem menyajikan notifikasi keberhasilan kepada pengguna. |
+

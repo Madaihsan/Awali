@@ -85,3 +85,4 @@ Seluruh kebutuhan non-fungsional diturunkan dari Register Kepatuhan M01 (`docs/0
 * **Waktu Alur Presensi:** Waktu yang dibutuhkan pegawai sejak menekan tombol presensi, validasi koordinat lokasi, hingga pengambilan deteksi wajah selesai tercatat adalah **$\le 10$ detik**.
 * **Kecepatan Buka Kunci PIN:** Verifikasi PIN lokal harus selesai dalam waktu **$< 1$ detik**.
 * **Toleransi Radius Geofencing:** Jarak maksimum kehadiran yang diakui sistem adalah **50 meter** dari titik koordinat kantor.
+
