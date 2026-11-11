@@ -125,7 +125,7 @@ Setiap *User Story* dilengkapi dengan **Kriteria Penerimaan (*Acceptance Criteri
 
 ---
 
-### US-07: Hak Penghapusan Seluruh Data Pribadi Lokal (`PRV-03` / *Right to Erasure*)
+### US-PRV-03: Hak Penghapusan Seluruh Data Pribadi Lokal (`PRV-03` / *Right to Erasure*)
 * **Sebagai:** Pegawai
 * **Saya ingin:** Menghapus seluruh riwayat presensi, sesi login, dan data keamanan lokal saya dalam $\le 2$ ketukan
 * **Agar:** Hak privasi saya terpenuhi sesuai UU PDP Pasal 8 apabila saya tidak lagi menggunakan aplikasi ini.

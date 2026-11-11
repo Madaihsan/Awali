@@ -119,7 +119,7 @@ sequenceDiagram
         deactivate SEC
 
         %% Reset State & Tampilan
-        AP ->> AP : _records.clear(); notifyListeners()
+        AP ->> AP : _records.clear() lalu notifyListeners()
         AP -->> SS : Consumer rebuild (Riwayat menjadi kosong)
         deactivate AP
 
