@@ -24,7 +24,7 @@ Dengan adanya matriks ini, setiap fitur yang dikembangkan dipastikan memiliki da
 | **`FR-05`** | Pencatatan Presensi Masuk & Pulang | `US-04` | `UC-02` | `AttendanceProvider.recordAttendance()`, `AttendanceRepository.add()` | `AttendanceSuccessScreen` | `TC-ATT-01` (Simpan record presensi lengkap) |
 | **`FR-06`** | Riwayat Presensi Personal | `US-05` | `UC-06` | `AttendanceProvider.records`, `AttendanceRepository.getAll()` | `HistoryScreen` | `TC-HIST-01` (Muat riwayat kronologis) |
 | **`FR-07`** | Monitoring & Ekspor Rekapitulasi | `US-06` | `UC-08`, `UC-09` | `AttendanceProvider.persentaseKehadiran()`, `ExportService` | `DashboardScreen`, `ReportScreen` | `TC-REP-01` (Ekspor dokumen CSV/PDF ringkas) |
-| **`FR-08`** | Hak Penghapusan Data (Right to Erasure) | `US-07` | `UC-10` | `AttendanceProvider.clearAll()`, `SecureStorageService.clearAll()` | `PrivacySettingsScreen` (Dialog Konfirmasi) | `TC-PRV-01` (Verifikasi pemusnahan total data lokal) |
+| **`FR-08`** | Hak Penghapusan Data (Right to Erasure) | `US-PRV-03` | `UC-10` | `AttendanceProvider.clearAll()`, `SecureStorageService.clearAll()` | `PrivacySettingsScreen` (Dialog Konfirmasi) | `TC-PRV-01` (Verifikasi pemusnahan total data lokal) |
 
 ---
 
